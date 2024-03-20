@@ -56,7 +56,7 @@ body {
 }
 .rebus-box img {
     user-select: none;
-    max-width: 750px;
+    max-width: 100%;
 }
 
 
