@@ -22,7 +22,7 @@ function validate(e) {
     resultat.classList.add("visible");
     svar.classList.add("valid");
     resultat.setAttribute('aria-invalid', false);
-    resultat.textContent = "RIKTIG!";
+    resultat.textContent = "RIKTIG! Neste hint finner du der!";
     resultat.style.fontWeight = 800;
     document.getElementById("fireflame").style.visibility = "visible";
   }
