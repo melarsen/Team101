@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" role="img" aria-labelledby="title desc">
+  <title id="title">Gray color</title>
+  <desc id="desc">A gray paint swatch</desc>
+  <rect width="320" height="220" fill="#f3f4f6"/>
+  <rect x="40" y="30" width="240" height="160" rx="16" fill="#9ca3af" stroke="#4b5563" stroke-width="6"/>
+</svg>

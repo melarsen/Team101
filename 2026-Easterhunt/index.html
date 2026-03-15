@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Påskeeggjakt 2026 - Steg 1</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="scripts/hunt.js" defer></script>
+</head>
+<body>
+  <main class="card">
+    <div class="banner">Team 101 - Påskeeggjakt 2026 <a class="banner-link" href="index.html">Start på nytt</a></div>
+    <section class="content">
+      <p class="step">Steg 1 av 7</p>
+      <h1>Programmeringsnøtt: output</h1>
+      <p>Du starter her: løs oppgaven for å få neste URL.</p>
+      <div class="challenge">
+        <p>Hva blir output i Python?</p>
+        <span class="code">print("påske".upper())</span>
+      </div>
+      <form data-challenge-form data-case-sensitive data-accepted="PAASKE|PÅSKE" data-next="step2.html" data-next-label="Gå til steg 2" data-success-message="Riktig! I Python gjør upper() alle bokstaver store. Strenger er immutable, så metoden returnerer en ny streng i stedet for å endre originalen.">
+        <label for="answer">Skriv svaret:</label>
+        <input id="answer" name="answer" type="text" autocomplete="off" required>
+        <div class="actions">
+          <button type="submit">Sjekk svar</button>
+        </div>
+      </form>
+      <p class="feedback" data-feedback></p>
+      <div data-next></div>
+    </section>
+  </main>
+</body>
+</html>

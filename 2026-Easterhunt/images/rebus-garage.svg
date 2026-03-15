@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" role="img" aria-labelledby="title desc">
+  <title id="title">Garage</title>
+  <desc id="desc">A garage with a roll-up door</desc>
+  <rect width="320" height="220" fill="#ecfeff"/>
+  <path d="M40 95 L160 25 L280 95" fill="#64748b"/>
+  <rect x="58" y="92" width="204" height="108" fill="#e2e8f0" stroke="#334155" stroke-width="5"/>
+  <rect x="103" y="112" width="114" height="88" fill="#cbd5e1" stroke="#475569" stroke-width="4"/>
+  <line x1="103" y1="130" x2="217" y2="130" stroke="#94a3b8" stroke-width="3"/>
+  <line x1="103" y1="147" x2="217" y2="147" stroke="#94a3b8" stroke-width="3"/>
+  <line x1="103" y1="164" x2="217" y2="164" stroke="#94a3b8" stroke-width="3"/>
+</svg>

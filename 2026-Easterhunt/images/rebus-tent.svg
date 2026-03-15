@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" role="img" aria-labelledby="title desc">
+  <title id="title">Tent</title>
+  <desc id="desc">A simple camping tent</desc>
+  <rect width="320" height="220" fill="#f0fdf4"/>
+  <rect x="0" y="175" width="320" height="45" fill="#86efac"/>
+  <path d="M68 180 L160 46 L252 180 Z" fill="#16a34a" stroke="#166534" stroke-width="5"/>
+  <path d="M160 46 L210 180 L110 180 Z" fill="#22c55e"/>
+  <line x1="160" y1="46" x2="160" y2="180" stroke="#14532d" stroke-width="4"/>
+</svg>

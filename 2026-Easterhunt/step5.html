@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Påskeeggjakt 2026 - Steg 5</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="scripts/hunt.js" defer></script>
+</head>
+<body>
+  <main class="card">
+    <div class="banner">Team 101 - Påskeeggjakt 2026 <a class="banner-link" href="index.html">Start på nytt</a></div>
+    <section class="content">
+      <p class="step">Steg 5 av 7</p>
+      <h1>Programmering: for-lokke</h1>
+      <div class="challenge">
+        <p>Hva blir verdien av <strong>sum</strong> etter denne koden?</p>
+        <span class="code">let sum = 0;
+for (let i = 1; i &lt;= 5; i++) {
+  sum += i;
+}
+console.log(sum);</span>
+      </div>
+      <form data-challenge-form data-accepted="15" data-next="step6.html" data-next-label="Gå til steg 6" data-success-message="Riktig! Summen av tallene 1 + 2 + 3 + 4 + 5 er 15. Dette er en aritmetisk rekke, og kan også regnes med formelen n*(n+1)/2 når n=5." data-hint-message="Hint: Loopen legger sammen alle heltall fra 1 til 5. Prøv å summere dem ett og ett.">
+        <label for="answer">Skriv tallet:</label>
+        <input id="answer" name="answer" type="text" autocomplete="off" required>
+        <div class="actions">
+          <button type="submit">Sjekk svar</button>
+        </div>
+      </form>
+      <p class="feedback" data-feedback></p>
+      <div data-next></div>
+    </section>
+  </main>
+</body>
+</html>

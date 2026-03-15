@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" role="img" aria-labelledby="title desc">
+  <title id="title">Curved shape</title>
+  <desc id="desc">A curved arrow shape</desc>
+  <rect width="320" height="220" fill="#eff6ff"/>
+  <path d="M55 150 Q160 40 265 150" fill="none" stroke="#0f766e" stroke-width="16" stroke-linecap="round"/>
+  <path d="M250 130 L265 150 L246 162" fill="none" stroke="#0f766e" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
