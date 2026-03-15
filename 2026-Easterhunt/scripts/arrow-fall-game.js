@@ -256,7 +256,12 @@ function setupArrowFallGame() {
     const touch = event.changedTouches[0];
     touchStartX = touch.clientX;
     touchStartY = touch.clientY;
-  }, { passive: true });
+    event.preventDefault();
+  }, { passive: false });
+
+  area.addEventListener('touchmove', (event) => {
+    event.preventDefault();
+  }, { passive: false });
 
   area.addEventListener('touchend', (event) => {
     if (!running) return;
