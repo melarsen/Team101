@@ -37,6 +37,9 @@ body {
   position: relative;
   display: inline-block;
 }
+.hunt-menu > ul > li + li {
+  margin-left: 24px;
+}
 .hunt-menu a {
   display: block;
   color: #fffc33;
