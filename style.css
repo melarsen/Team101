@@ -81,6 +81,23 @@ body {
   background: #000;
   border: 1px solid #fffc33;
 }
+.submenu-toggle {
+  display: none;
+}
+.year-toggle {
+  display: block;
+  background: none;
+  border: none;
+  color: #fffc33;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.05rem;
+  padding: 12px 14px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  border-top: 1px solid rgba(255, 252, 51, 0.2);
+}
 .easter-banner {
   background: #FFFC33;
   color: #212837;
@@ -118,26 +135,50 @@ body {
 @media screen and (max-width: 800px) {
   .wrapper {
     width: 90vmin;
-    height: 115vmin;
+    height: auto;
+    overflow: visible;
   }
   .hunt-menu {
     padding: 0 20px;
   }
+  .hunt-menu > ul > li > a::after {
+    content: '';
+  }
+  .hunt-menu > ul > li.is-open > a::after {
+    content: '';
+  }
   .hunt-menu .submenu {
+    display: none;
     position: static;
-    display: block;
     border: none;
-    padding-bottom: 10px;
+    padding-bottom: 6px;
   }
   .hunt-menu .submenu--nested {
+    display: none;
     position: static;
     border: none;
     padding-left: 16px;
-    padding-bottom: 0;
+  }
+  .hunt-menu li.is-open > .submenu {
+    display: block;
   }
   .hunt-menu .submenu li a {
     padding: 8px 0;
     border-top: none;
+  }
+  .submenu-toggle {
+    display: inline-block;
+    background: none;
+    border: none;
+    color: #fffc33;
+    font-size: 0.85rem;
+    cursor: pointer;
+    padding: 2px 8px;
+    vertical-align: middle;
+  }
+  .hunt-menu li.is-open > .submenu-toggle {
+    transform: none;
+    content: '\25BC';
   }
   .easter-details {
     font-size: 1rem;

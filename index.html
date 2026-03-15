@@ -17,14 +17,14 @@
             <a href="#">Påskeeggjakt</a>
             <ul class="submenu">
               <li>
-                <a href="2024-Easterhunt/index.html">2024</a>
+                <button class="year-toggle" aria-label="Vis undermeny for 2024">2024</button>
                 <ul class="submenu submenu--nested">
                   <li><a href="2024-Easterhunt/index.html">Påskeeggjakt</a></li>
                   <li><a href="2024-Easterhunt/2024-easterhunt-gameplan.pdf" target="_blank">Gameplan</a></li>
                 </ul>
               </li>
               <li>
-                <a href="2025-Easterhunt/index.html">2025</a>
+                <button class="year-toggle" aria-label="Vis undermeny for 2025">2025</button>
                 <ul class="submenu submenu--nested">
                   <li><a href="2025-Easterhunt/index.html">Påskeeggjakt</a></li>
                   <li><a href="2025-Easterhunt/2025-easterhunt-gameplan.pdf" target="_blank">Gameplan</a></li>
@@ -48,6 +48,32 @@
         <img src="images/happy-easter-four.gif" id="easter" alt="">
       </div>
     </div>
+    <script>
+    (function () {
+      var mq = window.matchMedia('(max-width: 800px)');
+      document.addEventListener('click', function (e) {
+        if (!mq.matches) return;
+        var topLink = e.target.closest('.hunt-menu > ul > li > a');
+        if (topLink) {
+          e.preventDefault();
+          topLink.closest('li').classList.toggle('is-open');
+          return;
+        }
+        var toggleBtn = e.target.closest('.submenu-toggle, .year-toggle');
+        if (toggleBtn) {
+          e.preventDefault();
+          var li = toggleBtn.closest('li');
+          li.classList.toggle('is-open');
+          return;
+        }
+        if (!e.target.closest('.hunt-menu')) {
+          document.querySelectorAll('.hunt-menu li.is-open').forEach(function (li) {
+            li.classList.remove('is-open');
+          });
+        }
+      });
+    }());
+    </script>
   </body>
 </html>
 
