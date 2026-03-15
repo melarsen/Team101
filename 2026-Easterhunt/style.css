@@ -223,6 +223,7 @@ p {
   border-radius: 12px;
   border: 2px solid #475569;
   overflow: hidden;
+  touch-action: none;
   background:
     linear-gradient(180deg, #e2e8f0 0%, #cbd5e1 100%),
     repeating-linear-gradient(
